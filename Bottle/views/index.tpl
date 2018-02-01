@@ -5,3 +5,5 @@
 %end
 
 <h1> Hello {{name}} </h1>
+
+<img src="/static/coding.jpeg"/>

@@ -11,6 +11,13 @@ def fil():
     return template('index', name='Shubhendu')
 # name will bind into frontend page
 
+# Reading static file
+
+
+@route('/static/<filename>')
+def server_static(filename):
+    return static_file(filename, root='./img')
+
 
 if __name__ == '__main__':
     run(debug=True, reloader=True)
